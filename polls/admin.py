@@ -1,3 +1,7 @@
 from django.contrib import admin
+#importing models here 
+from .models import Destination
 
-# Register your models here.
+
+# Registring models here . function name :razor 
+admin.site.register(Destination)

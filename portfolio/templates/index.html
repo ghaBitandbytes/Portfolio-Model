@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { border: 1px solid #ccc; margin: 10px 0; padding: 10px; border-radius: 5px; }
+        img { max-width: 100px; display: block; margin-bottom: 10px; }
+        form { margin-bottom: 30px; }
+        input, textarea, button { display: block; margin: 5px 0; padding: 8px; width: 300px; }
+    </style>
+</head>
+<body>
+    <h1>All Portfolios</h1>
+
+    <form id="portfolio-form" enctype="multipart/form-data">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="designation" placeholder="Designation" required>
+        <textarea id="about" placeholder="About"></textarea>
+        <input type="text" id="education" placeholder="Education">
+        <textarea id="skills" placeholder="Skills"></textarea>
+        <input type="file" id="profile_image">
+        <button type="submit">Create Portfolio</button>
+    </form>
+
+    <ul id="portfolio-list"></ul>
+
+    <script>
+        // Function to fetch and display all portfolios
+        function fetchPortfolios() {
+            fetch('/api/portfolio/')
+                .then(response => response.json())
+                .then(data => {
+                    const list = document.getElementById('portfolio-list');
+                    list.innerHTML = ''; // Clear existing list
+                    data.forEach(p => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            ${p.profile_image ? `<img src="${p.profile_image}" alt="${p.name}">` : ''}
+                            <strong>${p.name}</strong> - ${p.designation}<br>
+                            <em>About:</em> ${p.about}<br>
+                            <em>Education:</em> ${p.education}<br>
+                            <em>Skills:</em> ${p.skills}<br>
+                            <em>Created:</em> ${new Date(p.created_at).toLocaleString()}
+                        `;
+                        list.appendChild(li);
+                    });
+                });
+        }
+
+        // Initial fetch
+        fetchPortfolios();
+
+        // Handle form submission
+        document.getElementById('portfolio-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('name').value);
+            formData.append('designation', document.getElementById('designation').value);
+            formData.append('about', document.getElementById('about').value);
+            formData.append('education', document.getElementById('education').value);
+            formData.append('skills', document.getElementById('skills').value);
+
+            const fileInput = document.getElementById('profile_image');
+            if (fileInput.files.length > 0) {
+                formData.append('profile_image', fileInput.files[0]);
+            }
+
+            fetch('/api/portfolio/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(result => {
+                alert('Portfolio created successfully!');
+                document.getElementById('portfolio-form').reset();
+                fetchPortfolios(); // refresh list
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

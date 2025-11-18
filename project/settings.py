@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "portfolio",
 ]
 
 MIDDLEWARE = [
@@ -72,7 +74,7 @@ DATABASES = {
         'USER': os.getenv('DATABASE_USER'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST': os.getenv('DATABASE_HOST'),
-        'PORT': os.getenv('DATABASE_PORT'),
+        'PORT': int(os.getenv('DATABASE_PORT' , 5432)),
     }
 }
 
@@ -117,3 +119,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/' #URL where media files can be accesssed
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') #folders where uploaded files are being saved 
