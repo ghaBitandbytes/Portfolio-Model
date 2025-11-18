@@ -1,0 +1,156 @@
+[
+{
+  "model": "portfolio.portfolio",
+  "pk": 1,
+  "fields": {
+    "name": "emma",
+    "designation": "designer",
+    "about": "emma is a designer",
+    "education": "economics",
+    "skills": "stitching , knitting",
+    "profile_image": "profiles/Screenshot_From_2025-10-08_19-56-27.png",
+    "created_at": "2025-11-17T10:08:50.020Z",
+    "updated_at": "2025-11-17T10:08:50.020Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 2,
+  "fields": {
+    "name": "Article much interesting away want. Three ask develop show.",
+    "designation": "Specific fine budget more oil. About weight perhaps there cause necessary. However avoid home.",
+    "about": "Season security may goal role. Above daughter analysis case base product.",
+    "education": "Agency accept let fund interest again. One west pressure model school.\nEnd heart month participant talk. Best those third rather eye.",
+    "skills": "Simply hear interest class thought expect north standard. They race wide stay toward explain key. Listen bring picture relate.",
+    "profile_image": "cut.jpeg",
+    "created_at": "1979-11-12T16:22:40.853Z",
+    "updated_at": "1997-06-23T22:10:37.540Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 3,
+  "fields": {
+    "name": "Join last people month card south. Case at until point.",
+    "designation": "Real answer throw watch player scientist. Make provide allow.",
+    "about": "Since compare some condition. This many radio back. Voice site yourself vote administration expert response.\nPoor growth bar fight power improve interview. Forward deep else media whole than task.",
+    "education": "More sense sure indicate defense include. Result term street foreign. Carry economy political network.\nRoom pay campaign material do us red against. Raise to wonder bad. Over moment receive.",
+    "skills": "Build wish mission specific soon range. Mean already store design notice involve class. Head whose now different animal. Treat tax nice use yourself science until bring.",
+    "profile_image": "would.jpg",
+    "created_at": "2024-01-26T04:18:33.828Z",
+    "updated_at": "2021-03-11T22:04:08.895Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 4,
+  "fields": {
+    "name": "Myself from debate. Subject make upon project.",
+    "designation": "Recognize American around federal future. Station notice industry around high road.",
+    "about": "Lot hear eat test cover. Yeah another see north. Bar visit student.\nSupport writer man reach control Mr. Security street thing federal key into trade.",
+    "education": "Former rich probably change. Stock stop claim bank might. Nothing worry race threat cover me.\nOur mission since our series. Rich hair ten white trip just. Occur growth huge.\nProfessional fund him anyone. Thus fill evening fall east pay entire.",
+    "skills": "Seem foreign visit hospital ready wife they. After always claim security. Establish rest sea star heart later majority water. Threat another each commercial.",
+    "profile_image": "will.bmp",
+    "created_at": "1980-09-23T12:55:46.975Z",
+    "updated_at": "1988-04-16T07:34:32.370Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 5,
+  "fields": {
+    "name": "Guess hand good democratic. Though bar college range decide western many.",
+    "designation": "Hit water they start. Method more around much. Skill recognize enjoy down change region talk.",
+    "about": "Collection open bag everyone federal mission. Project including card then. Style series store drop watch soldier.\nSame we create game reveal professional. When data herself require.",
+    "education": "Government never card.\nDog billion list meeting difficult. Land radio understand condition hope wide middle break.\nProcess approach join hard. Culture general maintain. Ground option clearly material.\nGuy class attention central go focus never.",
+    "skills": "Four tell improve effort visit start name determine.\nCan effort bed per. Company executive energy.\nSurface guess father operation school so. Anything knowledge minute owner street.",
+    "profile_image": "home.tiff",
+    "created_at": "2018-03-15T13:35:59.248Z",
+    "updated_at": "2000-06-12T05:19:59.784Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 6,
+  "fields": {
+    "name": "Ground start religious phone bed. Concern PM all hard different letter.",
+    "designation": "Or trial region but reach. Service agency whose former sing.",
+    "about": "Happy institution paper. Bring involve financial experience leader large south. Well write mouth out firm your.\nWear make send stock feeling walk. Sense public day size.",
+    "education": "Parent source car ago yeah age. Degree serve huge.\nNatural career amount probably. Class particular president subject message must government. Across entire discuss. Sound south we fight rock.\nLive example million start which final usually.",
+    "skills": "Board hair measure with game blue instead. End successful list lot together. Population political your artist television page whatever.\nProfessor agreement close this.",
+    "profile_image": "play.csv",
+    "created_at": "2018-09-27T10:35:56.381Z",
+    "updated_at": "1988-02-28T15:49:23.150Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 7,
+  "fields": {
+    "name": "Especially party break like. Either will page six. Prevent yard size space would employee.",
+    "designation": "Assume issue mean major close. Just office southern could day stand.",
+    "about": "Treat information situation hotel left cover. Large year step size individual choose common.\nWrong Democrat education almost last join science. Today national draw shake edge live against leg.",
+    "education": "Between city expert after build increase never. Discover chance girl trouble first.\nForget PM sell quickly watch small new. Professional conference wonder thought hot leader subject.\nActivity black off throw inside goal.",
+    "skills": "I none answer relationship agency end end. In hotel first billion statement firm.",
+    "profile_image": "create.mov",
+    "created_at": "1975-08-12T18:01:10.086Z",
+    "updated_at": "1999-05-05T22:13:05.439Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 8,
+  "fields": {
+    "name": "Coach seek study. Past know history. Finally spend officer create those themselves.",
+    "designation": "Form window camera rise team lawyer themselves with. Traditional less by bed owner church radio.",
+    "about": "Camera image stock among oil. Buy speak order happen.\nSimple part as result beautiful central yet. Benefit good current consumer lead national become. Break month minute reach.",
+    "education": "Throw spring trial choose quality power hour. Simple study kid response nation guy Mr.\nEducation couple I according participant bank. Ok because administration.\nPurpose race but nation.",
+    "skills": "Drive American sing accept. Finally free most control far degree away.\nYourself society guess establish. Write force spend trade see test.\nCrime ask measure upon. Him discover process than.",
+    "profile_image": "decide.html",
+    "created_at": "2006-01-07T16:44:31.005Z",
+    "updated_at": "1991-05-01T23:09:04.346Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 9,
+  "fields": {
+    "name": "Manage door draw expect. Artist your action entire her push government.",
+    "designation": "Just either then serious.",
+    "about": "Explain our wait set well in. Before current point.\nWest last thought financial represent star. As think surface third language.",
+    "education": "Mind church move country note pressure.\nTraining across suffer stand fish who. Director view religious place perform similar.",
+    "skills": "Six before six drive well treatment almost.\nDecade street sea final upon large answer. Thought event fall.",
+    "profile_image": "weight.css",
+    "created_at": "1997-12-14T22:22:00.459Z",
+    "updated_at": "1979-12-02T04:20:00.460Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 10,
+  "fields": {
+    "name": "Simple result population view beautiful. Site miss only region north onto.",
+    "designation": "Interview senior public author chair. Single job example. Gas organization land from.",
+    "about": "Power card could anyone history. Too of miss cold together foreign woman. Figure sure argue present huge size difficult.",
+    "education": "Later save rest view attorney. Main at conference state station alone.\nPoint cause thought would east address. Someone travel actually for despite thank.",
+    "skills": "Change test concern rate. Audience scene consider pay court improve. Land school man mean street consumer goal our.\nWish own foot out same more common direction.",
+    "profile_image": "sign.html",
+    "created_at": "2004-12-05T06:39:59.318Z",
+    "updated_at": "2014-05-15T19:52:16.648Z"
+  }
+},
+{
+  "model": "portfolio.portfolio",
+  "pk": 11,
+  "fields": {
+    "name": "Ten when pick husband. Nice serve national market.",
+    "designation": "Adult statement weight visit. Serious police Mr agreement chair finally significant.",
+    "about": "They left sometimes picture. Market activity five reach fear. Several his live view begin she across.",
+    "education": "Field think miss senior sister. Focus bring increase cell certain.\nEast wind possible condition discussion time. Take area cost feeling someone final. Discover toward lose culture.\nBank a describe meeting. Hard then stock than but.",
+    "skills": "Around traditional yeah beautiful wrong. Gas possible team country.\nMorning improve same. General information keep seat role sometimes newspaper. Second future at involve plan.",
+    "profile_image": "city.csv",
+    "created_at": "1990-03-27T06:48:32.335Z",
+    "updated_at": "1980-04-29T05:11:01.696Z"
+  }
+}
+]
