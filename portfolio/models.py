@@ -1,3 +1,4 @@
+from cloudinary.models import CloudinaryField
 from django.db import models
 
 # Create your models here.
@@ -7,7 +8,8 @@ class Portfolio(models.Model):
     about = models.TextField()
     education = models.CharField(max_length=255)
     skills = models.TextField()
-    profile_image = models.ImageField(upload_to='profiles/', blank=True, null=True) #blank and null set to true in case if any person do not upload their proifle picture 
+    #profile_image = models.ImageField(upload_to='profiles/', blank=True, null=True) #blank and null set to true in case if proifle picture do not upload in any case  
+    profile_image = CloudinaryField('image', blank=True, null=True) 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

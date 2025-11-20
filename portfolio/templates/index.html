@@ -38,7 +38,7 @@
                     data.forEach(p => {
                         const li = document.createElement('li');
                         li.innerHTML = `
-                            ${p.profile_image ? `<img src="${p.profile_image}" alt="${p.name}">` : ''}
+                            ${p.profile_image ? `<img src="${p.profile_image.url}" alt="${p.name}">` : ''}
                             <strong>${p.name}</strong> - ${p.designation}<br>
                             <em>About:</em> ${p.about}<br>
                             <em>Education:</em> ${p.education}<br>

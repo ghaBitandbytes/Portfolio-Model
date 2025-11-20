@@ -2,16 +2,16 @@ import os
 from pathlib import Path
  # Load environment variables from .env file
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
-
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 SECRET_KEY = os.getenv('SECRET_KEY')
@@ -33,7 +33,17 @@ INSTALLED_APPS = [
     "rest_framework",
     "portfolio",
     "django_seed",
+    "cloudinary",
+    "cloudinary_storage",
 ]
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,6 +130,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-MEDIA_URL = '/media/' #URL where media files can be accesssed
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') #folders where uploaded files are being saved 
+#MEDIA_URL = '/media/' #URL where media files can be accesssed
+
+#for now not needed as fiels have to be sored in cloudinary 
+#MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') #folders where uploaded files are being saved 

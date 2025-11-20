@@ -3,6 +3,8 @@ from rest_framework import serializers
 from .models import Portfolio
 
 class PortfolioSerializer(serializers.ModelSerializer):#modelserializer automatically cretae fields based on oyur model do not need to create manually 
+    profile_image = serializers.ImageField(use_url=True)
+    
     class Meta:
         model = Portfolio
         fields = '__all__' #tells to include all fields in th portfolio model in the API
